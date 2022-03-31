@@ -1,9 +1,11 @@
 import asyncio
 
 from api import run_api
+from database.db_connection import db_connect
 
 
 async def main():
+    db_connect()
     await run_api()
 
 
